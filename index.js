@@ -1,4 +1,5 @@
 const http = require('http');
+
 function calculatePi(precision) {
     let pi = 0;
     const iterations = 100000000; 
