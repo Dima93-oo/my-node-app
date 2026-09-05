@@ -1,12 +1,21 @@
 const http = require('http');
-
-function calculatePi(precision) {
-    let pi = 0;
-    const iterations = 100000000; 
-    for (let i = 0; i < iterations; i++) {
-        pi += (i % 2 === 0 ? 1 : -1) / (2 * i + 1);
-    }
-    return (pi * 4).toFixed(precision);
+function calculatePi(digits) {
+    const scale = 10n ** BigInt(digits + 5);
+    function arctan(x) {
+        let power = scale / BigInt(x);
+        let sum = power;
+        const xSq = BigInt(x) * BigInt(x);
+        for (let i = 1; i < 1000; i++) {
+            power = -power / xSq;
+            const term = power / BigInt(2 * i + 1);
+            sum += term;
+            if (term === 0n) break;
+        }
+        return sum;
+    }  
+    const pi = 4n * (4n * arctan(5) - arctan(239));
+    const piStr = pi.toString();
+    return piStr[0] + '.' + piStr.slice(1, digits + 1);
 }
 const studentName = "Фурс Дмитрий Геннадьевич";
 const studentGroup = "477";
