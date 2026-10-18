@@ -1,0 +1,14 @@
+[2026-09-12T06:00:41.795Z] СОБЫТИЕ: server:started - порт 3000
+[2026-09-12T06:00:56.805Z] СОБЫТИЕ: server:stopped
+[2026-09-12T06:01:44.188Z] СОБЫТИЕ: server:started - порт 3000
+[2026-09-12T06:01:48.364Z] СОБЫТИЕ: request:received - GET /order/42
+[2026-09-12T06:01:48.435Z] СОБЫТИЕ: request:received - GET /favicon.ico
+[2026-09-12T06:02:43.685Z] СОБЫТИЕ: request:received - GET /order/42
+[2026-09-12T06:02:43.735Z] СОБЫТИЕ: request:received - GET /favicon.ico
+[2026-09-12T06:02:44.839Z] СОБЫТИЕ: request:received - GET /order/42
+[2026-09-12T06:02:44.870Z] СОБЫТИЕ: request:received - GET /favicon.ico
+[2026-09-12T06:02:45.655Z] СОБЫТИЕ: request:received - GET /order/42
+[2026-09-12T06:02:45.695Z] СОБЫТИЕ: request:received - GET /favicon.ico
+[2026-09-12T06:02:46.288Z] СОБЫТИЕ: request:received - GET /order/42
+[2026-09-12T06:02:46.322Z] СОБЫТИЕ: request:received - GET /favicon.ico
+[2026-09-12T06:02:52.338Z] СОБЫТИЕ: server:stopped

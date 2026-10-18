@@ -49,19 +49,23 @@ app.post('/api/books', (req, res) => {
 app.put('/api/books/:id', (req, res) => {
     const bookId = parseInt(req.params.id);
     const bookIndex = books.findIndex(b => b.id === bookId);
+    
     if (bookIndex === -1) {
-        res.status(404).json({ error: 'Книга не найдена' });
-        return;
+        return res.status(404).json({ error: 'Книга не найдена', status: 404 });
     }
+    
     const { title, author, year } = req.body;
-    if (!title || !author || !year) {
-        res.status(400).json({ error: 'Поля title, author и year обязательны' });
-        return;
+    
+    if (!title && !author && !year) {
+        return res.status(400).json({ error: 'Должно быть указано хотя бы одно поле для обновления', status: 400 });
     }
-    books[bookIndex] = { ...books[bookIndex], title, author, year: parseInt(year) };
+    
+    if (title) books[bookIndex].title = title;
+    if (author) books[bookIndex].author = author;
+    if (year) books[bookIndex].year = parseInt(year);
+    
     res.json(books[bookIndex]);
 });
-
 app.delete('/api/books/:id', (req, res) => {
     const bookId = parseInt(req.params.id);
     const bookIndex = books.findIndex(b => b.id === bookId);

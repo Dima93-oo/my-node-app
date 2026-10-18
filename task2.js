@@ -35,6 +35,8 @@ async function printTree(dir, prefix = '') {
 
 async function task2() {
     try {
+        await fs.rm(baseDir, { recursive: true, force: true });
+
         const dirs = [
             { path: path.join(baseDir, 'src', 'modules'), desc: 'Исходные модули' },
             { path: path.join(baseDir, 'src', 'components', '1'), desc: 'Компонент 1 (Вариант 25 - нечетный)' },
