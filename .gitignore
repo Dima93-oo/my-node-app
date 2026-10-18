@@ -1,11 +1,6 @@
+*.log
+errors.log
 node_modules/
+dist/
+build/
 .env
-.DS_Store
-source_25/
-backup_25/
-project_25/
-data_25.txt
-processed_25.txt
-report_25.json
-student_25.txt
-sync_report_25.txtnode_modules/ 
