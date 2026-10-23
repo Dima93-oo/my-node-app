@@ -1,0 +1,21 @@
+ 
+[2026-10-18 13:29:45] GET /api/books?limit=2&page=1%22 200 - 4ms
+[2026-10-18 13:29:45] GET /api/books?limit=2&page=1%22 200 - 0ms
+[2026-10-18 13:29:59] GET /api/books?limit=2&page=1 200 - 1ms
+[2026-10-18 13:30:05] GET /api/books?sort=-year%22 200 - 0ms
+[2026-10-18 13:30:05] GET /api/books?sort=-year%22 200 - 0ms
+[2026-10-18 13:30:06] GET /api/books?sort=-year 200 - 0ms
+[2026-10-18 13:30:10] GET /api/books?yearFrom=1800&yearTo=1900%22 200 - 0ms
+[2026-10-18 13:30:10] GET /api/books?yearFrom=1800&yearTo=1900%22 200 - 1ms
+[2026-10-18 13:30:11] GET /api/books?yearFrom=1800&yearTo=1900 200 - 1ms
+[2026-10-18 13:30:16] GET /api/books?search=1984%22 200 - 1ms
+[2026-10-18 13:30:16] GET /api/books?search=1984%22 200 - 1ms
+[2026-10-18 13:30:16] GET /api/books?search=1984 200 - 0ms
+[2026-10-18 13:30:21] GET /api/books/stats 200 - 1ms
+[2026-10-18 13:30:21] GET /api/books/stats 200 - 0ms
+[2026-10-18 13:30:28] GET /api/books%20-H%20%22Content-Type:%20application/json%22%20-d%20%22%7B%5C%22title%5C%22:%5C%22%5C%22,%5C%22author%5C%22:%5C%22%D0%A2%D0%B5%D1%81%D1%82%5C%22,%5C%22year%5C%22:2020%7D%22 404 - 2ms
+[2026-10-18 13:30:29] POST /api/books 400 - 1ms
+[2026-10-18 13:30:34] GET /api/books/1 200 - 0ms
+[2026-10-18 13:30:35] GET /api/books/1 200 - 0ms
+[2026-10-18 13:30:40] GET /api/books/4 200 - 0ms
+[2026-10-18 13:30:41] DELETE /api/books/4 200 - 1ms
