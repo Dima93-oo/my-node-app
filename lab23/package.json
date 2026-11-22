@@ -1,0 +1,9 @@
+{
+  "name": "lab23-mongodb",
+  "version": "1.0.0",
+  "main": "mongodb-connect.js",
+  "dependencies": {
+    "mongodb": "^6.10.0",
+    "dotenv": "^16.4.5"
+  }
+}
